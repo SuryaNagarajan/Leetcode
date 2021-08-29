@@ -1,9 +1,7 @@
 class Solution {
 public:
     bool isValid(vector<vector<int>>& grid,int n,int m,int i,int j){
-        if(i>=n || i<0 || j>=m || j<0 || grid[i][j]==3 || grid[i][j]==0 || grid[i][j]==2) return false;
-        
-        return true;
+        return (i>=0 && j>=0 && i<n && j<m && grid[i][j]==1);
     }
     
     int orangesRotting(vector<vector<int>>& grid) {
