@@ -7,15 +7,6 @@ public:
         
         for(auto c:text) m[c]++;
         
-        for(auto c:str){
-            if(c=='l' || c=='o') {
-                count = min(count,m[c]/2);
-            }else{
-                count=min(count,m[c]);    
-            }
-            
-        }
-        
-        return count;
+        return min(m['b'],min(m['a'],min((m['l']/2),min((m['o']/2),m['n']))));
     }
 };
